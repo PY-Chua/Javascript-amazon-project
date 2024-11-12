@@ -62,7 +62,7 @@ export function updateQuantity(productId, newQuantity) {
     cart.forEach((cartItem) => {
         if (productId === cartItem.productId) {
             cartItem.quantity = newQuantity;
-            console.log(cartItem.quantity);
+            // console.log(cartItem.quantity);
         }
     });
     saveToStorage();
